@@ -1,0 +1,137 @@
+```html
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧮 Kalkulyator | ULUG'BEK.R</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="card calculator-card">
+
+            <div class="section-title">
+                <h2>🧮 Kalkulyator</h2>
+                <p>Oddiy va qulay hisoblash vositasi</p>
+            </div>
+
+            <!-- EKRAN -->
+            <div class="calculator-display">
+                <div id="calcExpression" class="calc-expression"></div>
+                <div id="calcDisplay" class="calc-display">0</div>
+            </div>
+
+            <!-- TUGMALAR -->
+            <div class="calculator-buttons">
+
+                <button class="calc-btn function"
+                        data-action="clear">AC</button>
+
+                <button class="calc-btn function"
+                        data-action="backspace">⌫</button>
+
+                <button class="calc-btn function"
+                        data-action="percent">%</button>
+
+                <button class="calc-btn operator"
+                        data-operator="/">÷</button>
+
+
+                <button class="calc-btn"
+                        data-number="7">7</button>
+
+                <button class="calc-btn"
+                        data-number="8">8</button>
+
+                <button class="calc-btn"
+                        data-number="9">9</button>
+
+                <button class="calc-btn operator"
+                        data-operator="*">×</button>
+
+
+                <button class="calc-btn"
+                        data-number="4">4</button>
+
+                <button class="calc-btn"
+                        data-number="5">5</button>
+
+                <button class="calc-btn"
+                        data-number="6">6</button>
+
+                <button class="calc-btn operator"
+                        data-operator="-">−</button>
+
+
+                <button class="calc-btn"
+                        data-number="1">1</button>
+
+                <button class="calc-btn"
+                        data-number="2">2</button>
+
+                <button class="calc-btn"
+                        data-number="3">3</button>
+
+                <button class="calc-btn operator"
+                        data-operator="+">+</button>
+
+
+                <button class="calc-btn function"
+                        data-action="sqrt">√</button>
+
+                <button class="calc-btn"
+                        data-number="0">0</button>
+
+                <button class="calc-btn"
+                        data-action="decimal">.</button>
+
+                <button class="calc-btn equal"
+                        data-action="equals">=</button>
+
+
+                <button class="calc-btn function"
+                        data-action="square">x²</button>
+
+                <button class="calc-btn function"
+                        data-action="sign">±</button>
+
+            </div>
+
+
+            <!-- TARIX -->
+            <div class="calculator-history">
+
+                <div class="history-header">
+                    <h3>📜 Hisob-kitob tarixi</h3>
+
+                    <button id="clearCalcHistory">
+                        🗑️ Tozalash
+                    </button>
+                </div>
+
+                <div id="calcHistoryList"
+                     class="history-list">
+
+                    <p class="empty-history">
+                        Hali hisob-kitoblar mavjud emas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
